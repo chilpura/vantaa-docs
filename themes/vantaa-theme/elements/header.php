@@ -14,11 +14,12 @@
 
 
 <body class="level-@t(level)">
-	
+
+
 	@x(Navbar {
 		brand: @s(brand),
-		fluid: false,
+		fluid: true,
 		fixedToTop: true,
-		search: "Search",
-		levels: 2
+		search: "Hae",
+		levels: 1
 	})

@@ -1,14 +1,16 @@
+<!-- Modattu carousel_and_subnav.php -->
 <?php defined('AUTOMAD') or die('Direct access not permitted!'); ?>
 @i(elements/header.php)
 
 	<div class="container">
 		
 		<div class="row">
+			<div class="col-md-12">@t(navBreadcrumbs { separator: "<span class=\"glyphicon glyphicon-chevron-right\"></span>" })</div>
 			<!-- <div class="col-md-12 prev-next">	
 				@t(linkPrev)
 				<div class="pull-right">@t(linkNext)</div>		
-			</div> -->
-<!-- 			<div class="col-md-12">
+			</div>
+ 			<div class="col-md-12">
 				@x(carousel {
 					files: @p(carousel_files),
 					width: 1200,
@@ -18,12 +20,12 @@
 			<div class="col-md-8 no-vertical-padding">
 				<div class="row">
 					<div id="title" class="col-md-12">
-						<h1>@p(title)</h1>
+						<!-- <h1>@p(title)</h1> -->
 						<h2>@p(subtitle)</h2>
 					</div>
-					<div class="col-md-12">
+					<!-- <div class="col-md-12">
 						@t(filterParentByTags)
-					</div>
+					</div> -->
 					<div class="col-md-12">
 						@p(text)
 					</div>
@@ -32,7 +34,7 @@
 			</div>
 			<div class="col-md-4 col-lg-offset-1 col-lg-3 no-vertical-padding">
 				<div class="row">
-					<div class="col-md-12">@t(navTree { parent: '/', all: false })</div>
+					<div class="col-md-12">@t(navTree { parent: '/', all: false, rootLevel: 1 })</div>
 				</div>
 			</div>
 		</div>		
